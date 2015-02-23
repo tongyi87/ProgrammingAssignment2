@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+##Creates all the functions into a list and returns it.
 
 makeCacheMatrix <- function(x = matrix()) {
 		i <- NULL
@@ -19,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## If inverse is null, inverse is retrieved with the solve() function and assigned to the matrix using the setInverse function.
 cacheSolve <- function(x, ...) {
 		i <- x$getInverse()
         if(!is.null(i)) {
